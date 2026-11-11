@@ -1,33 +1,62 @@
 export const peliculasData = [
-  {
-    id: 1,
-    titulo: "Interstellar",
-    tipo: "Película",
-    genero: "Ciencia ficción",
-    imagen: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&auto=format&fit=crop&q=60",
-    sinopsis: "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento por asegurar la supervivencia de la humanidad.",
-    anio: 2014,
-    duracion: "169 min"
+  { 
+    id: 1, 
+    titulo: "La Leyenda de la Llorona", 
+    tipo: "Película", 
+    genero: "Animación", 
+    sinopsis: "Tras derrotar a La Nahuala, Leo San Juan emprende un viaje a Xochimilco para detener una serie de desapariciones de niños atribuidas a La Llorona.", 
+    año: 2011, 
+    duracion: "75 min",
+    imagen: "/llorona.jpg" 
   },
-  {
-    id: 2,
-    titulo: "Coco",
-    tipo: "Película",
-    genero: "Animación",
-    imagen: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=60",
-    sinopsis: "Miguel, un joven aspirante a músico, se adentra en la Tierra de los Muertos para buscar a su tatarabuelo, un legendario cantante.",
-    anio: 2017,
-    duracion: "105 min"
+  { 
+    id: 2, 
+    titulo: "El Conjuro", 
+    tipo: "Película", 
+    genero: "Terror", 
+    sinopsis: "Los investigadores paranormales Ed y Lorraine Warren acuden a ayudar a una familia aterrada por una presencia oscura en su granja.", 
+    año: 2013, 
+    duracion: "112 min",
+    imagen: "/conjuro.jpg" 
   },
-  {
-    id: 3,
-    titulo: "Stranger Things",
-    tipo: "Serie",
-    genero: "Misterio",
-    imagen: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=500&auto=format&fit=crop&q=60",
-    sinopsis: "Cuando un niño desaparece, un pueblo pequeño descubre un misterio que involucra experimentos secretos, fuerzas sobrenaturales aterradoras y una niña extraña.",
-    anio: 2016,
-    temporadas: "4 Temporadas"
+  { 
+    id: 3, 
+    titulo: "El Conjuro 2", 
+    tipo: "Película", 
+    genero: "Terror", 
+    sinopsis: "Ed y Lorraine Warren viajan al norte de Londres para ayudar a una madre soltera y sus cuatro hijos atormentados por un poltergeist.", 
+    año: 2016, 
+    duracion: "134 min",
+    imagen: "/conjuro 2.jpg" 
   },
-  // Puedes agregar más películas o series hasta completar las 20 requeridas por la rúbrica
+  { 
+    id: 4, 
+    titulo: "El Conjuro 3: El diablo me obligó a hacerlo", 
+    tipo: "Película", 
+    genero: "Terror", 
+    sinopsis: "Los Warren investigan un caso de asesinato donde el sospechoso alega posesión demoníaca como su defensa legal.", 
+    año: 2021, 
+    duracion: "112 min",
+    imagen: "/conjuro3.jpg" 
+  },
+  { 
+    id: 5, 
+    titulo: "Barbie en el Cascanueces", 
+    tipo: "Película", 
+    genero: "Animación", 
+    sinopsis: "Barbie cobra vida en esta mágica adaptación del clásico cuento, donde emprende una aventura para salvar al Príncipe Eric.", 
+    año: 2001, 
+    duracion: "76 min",
+    imagen: "/barbie.jpg" 
+  },
+  { 
+    id: 6, 
+    titulo: "Todos queremos a alguien", 
+    tipo: "Película", 
+    genero: "Comedia romántica", 
+    sinopsis: "Una doctora exitosa viaja a México para una boda familiar y le pide a un compañero de trabajo que se haga pasar por su novio.", 
+    año: 2017, 
+    duracion: "102 min",
+    imagen: "TodosQueremosaAlguien.jpg" 
+  }
 ];
