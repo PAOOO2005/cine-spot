@@ -1,16 +1,47 @@
-# React + Vite
+# 🌸 CineSpot - Explorador de Películas y Series
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React** y **Vite** para la gestión, búsqueda, filtrado y visualización de un catálogo de películas y series, con un diseño personalizado en tonos rosas y persistencia de favoritos.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnología Seleccionada
+- **React**: Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas basadas en componentes.
+- **Vite**: Herramienta de compilación rápida y entorno de desarrollo local.
+- **CSS3**: Estilos personalizados con paleta de colores en tonos rosa pastel/frambuesa.
+- **LocalStorage**: API del navegador para guardar y persistir las películas y series marcadas como favoritas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚙️ Procedimiento de Instalación y Ejecución
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
 
-## Expanding the ESLint configuration
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/PAOOO2005/cine-spot.git
+Entrar a la carpeta del proyecto:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bash
+cd cine-spot
+Instalar las dependencias:
+
+Bash
+npm install
+Ejecutar el servidor de desarrollo local:
+
+Bash
+npm run dev
+Abre el enlace que aparece en tu terminal (por lo regular http://localhost:5173/) en tu navegador web.
+
+Explicación de los Componentes y Funcionalidades
+src/peliculasData.js: Archivo de datos centralizado que almacena el catálogo completo de películas y series, incluyendo títulos, tipos, géneros, años, duraciones/temporadas, sinopsis, rutas de imágenes locales y enlaces a los trailers de YouTube.
+
+src/App.jsx: Componente principal que integra la lógica de la interfaz:
+
+Buscador en tiempo real.
+
+Filtros por tipo y género.
+
+Sistema de favoritos sincronizado con LocalStorage.
+
+Vista detallada mediante un modal interactivo con sinopsis completa y botón de acceso al trailer.
+
+src/App.css: Hoja de estilos encargada de dar la identidad visual en tonos rosas y un diseño responsivo en cuadrícula.
