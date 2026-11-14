@@ -1,8 +1,8 @@
-# 🌸 CineSpot - Explorador de Películas y Series
+# CineLux - Explorador de Películas y Series
 
 Aplicación web desarrollada en **React** y **Vite** para la gestión, búsqueda, filtrado y visualización de un catálogo de películas y series, con un diseño personalizado en tonos rosas y persistencia de favoritos.
 
-## 🛠️ Tecnología Seleccionada
+## Tecnología Seleccionada
 - **React**: Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas basadas en componentes.
 - **Vite**: Herramienta de compilación rápida y entorno de desarrollo local.
 - **CSS3**: Estilos personalizados con paleta de colores en tonos rosa pastel/frambuesa.
