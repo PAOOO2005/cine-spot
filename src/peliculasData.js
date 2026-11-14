@@ -9,7 +9,7 @@ export const peliculasData = [
     año: 2011, 
     duracion: "75 min",
     imagen: "/llorona.jpg",
-    trailer: "https://youtu.be/djI8bX5NXj4?si=joPKOcjiq6Ra4X6y"
+    trailer: "https://www.youtube.com/embed/djI8bX5NXj4"
   },
   { 
     id: 2, 
@@ -21,7 +21,7 @@ export const peliculasData = [
     año: 2013, 
     duracion: "112 min",
     imagen: "/conjuro.jpg",
-    trailer: "https://youtu.be/re-COVREAoI?si=0WUOU-Vb3R9xXfC-"
+    trailer: "https://www.youtube.com/embed/re-COVREAoI"
   },
   { 
     id: 3, 
@@ -33,7 +33,7 @@ export const peliculasData = [
     año: 2016, 
     duracion: "134 min",
     imagen: "/conjuro 2.jpg",
-    trailer: "https://youtu.be/cuDBjj_Gs0M?si=jZ9kc5hsZg7P7Zpz"
+    trailer: "https://www.youtube.com/embed/cuDBjj_Gs0M"
   },
   { 
     id: 4, 
@@ -45,7 +45,7 @@ export const peliculasData = [
     año: 2021, 
     duracion: "112 min",
     imagen: "/conjuro3.jpg",
-    trailer: "https://youtu.be/S8nlMJfE6pc?si=L0VV1zLawcGEdoZH"
+    trailer: "https://www.youtube.com/embed/S8nlMJfE6pc"
   },
   { 
     id: 5, 
@@ -57,7 +57,7 @@ export const peliculasData = [
     año: 2001, 
     duracion: "76 min",
     imagen: "/barbie.jpg",
-    trailer: "https://youtu.be/BERYcDgAEJU?si=v6-nxoi_uEt_m9IW"
+    trailer: "https://www.youtube.com/embed/BERYcDgAEJU"
   },
   { 
     id: 6, 
@@ -69,7 +69,7 @@ export const peliculasData = [
     año: 2017, 
     duracion: "102 min",
     imagen: "/TodosQueremosaAlguien.jpg",
-    trailer: "https://www.youtube.com/watch?v=fFXW6UmBfps&pp=ygUgVG9kb3MgcXVlcmVtb3MgYSBhbGd1aWVuIHRyYWlsZXI%3D"
+    trailer: "https://www.youtube.com/embed/fFXW6UmBfps"
   },
   { 
     id: 7, 
@@ -81,7 +81,7 @@ export const peliculasData = [
     año: 2022, 
     temporadas: "1 Temporada",
     imagen: "/thepolygamist.jpg",
-    trailer: "https://youtu.be/KBJllQVRuAA?si=nLRuW67LhWX7_Ak8"
+    trailer: "https://www.youtube.com/embed/KBJllQVRuAA"
   },
   { 
     id: 8, 
@@ -93,7 +93,7 @@ export const peliculasData = [
     año: 2023, 
     duracion: "95 min",
     imagen: "/hazqueregrese.jpg",
-    trailer: "https://youtu.be/E3jyDKMi33Y?si=HJYWgpZ81Hyj0OJf"
+    trailer: "https://www.youtube.com/embed/E3jyDKMi33Y"
   },
   { 
     id: 9, 
@@ -105,7 +105,7 @@ export const peliculasData = [
     año: 2007, 
     duracion: "102 min",
     imagen: "/norbit.jpg",
-    trailer: "https://youtu.be/HFIdZpc2L6w?si=_HJiLCQb0whwMQ5V"
+    trailer: "https://www.youtube.com/embed/HFIdZpc2L6w"
   },
   { 
     id: 10, 
@@ -117,7 +117,7 @@ export const peliculasData = [
     año: 2006, 
     duracion: "98 min",
     imagen: "/chuiquito.jpg",
-    trailer: "https://youtu.be/xg0eNDIWYho?si=8QQyUEtfz2F5AN5U"
+    trailer: "https://www.youtube.com/embed/xg0eNDIWYho"
   },
   { 
     id: 11, 
@@ -129,7 +129,7 @@ export const peliculasData = [
     año: 2017, 
     duracion: "104 min",
     imagen: "/huye.jpg",
-    trailer: "https://youtu.be/dHj6a5g4ROY?si=893ZhAanXYyDerbB"
+    trailer: "https://www.youtube.com/embed/dHj6a5g4ROY"
   },
   { 
     id: 12, 
@@ -141,7 +141,7 @@ export const peliculasData = [
     año: 2019, 
     duracion: "100 min",
     imagen: "/fractura.jpg",
-    trailer: "https://youtu.be/sg3Pp1hpS14?si=HlwKMTDAg7vb-LSf"
+    trailer: "https://www.youtube.com/embed/sg3Pp1hpS14"
   },
   { 
     id: 13, 
@@ -153,7 +153,7 @@ export const peliculasData = [
     año: 2017, 
     temporadas: "3 Temporadas",
     imagen: "/dark.jpg",
-    trailer: "https://youtu.be/14FGjkrrXFk?si=DES2cqTeFazXHR0p"
+    trailer: "https://www.youtube.com/embed/14FGjkrrXFk"
   },
   { 
     id: 14, 
@@ -165,7 +165,7 @@ export const peliculasData = [
     año: 2021, 
     temporadas: "2 Temporadas",
     imagen: "/calamar.jpg",
-    trailer: "https://youtu.be/Mj4_xG5NXeo?si=NXQwtLUcT8kFGROo"
+    trailer: "https://www.youtube.com/embed/Mj4_xG5NXeo"
   },
   { 
     id: 15, 
@@ -177,7 +177,7 @@ export const peliculasData = [
     año: 2006, 
     temporadas: "7 Temporadas",
     imagen: "/elchavodel8.jpg",
-    trailer: "https://youtu.be/CuQitxW8qHg?si=4K8Kye5IQBaquCFA"
+    trailer: "https://www.youtube.com/embed/CuQitxW8qHg"
   },
   { 
     id: 16, 
@@ -189,7 +189,7 @@ export const peliculasData = [
     año: 1999, 
     temporadas: "14 Temporadas",
     imagen: "/bobesponja.jpg",
-    trailer: "https://youtu.be/v94Cbb76qfc?si=upX8wqttq6P2sxZk"
+    trailer: "https://www.youtube.com/embed/v94Cbb76qfc"
   },
   { 
     id: 17, 
@@ -201,7 +201,7 @@ export const peliculasData = [
     año: 2000, 
     temporadas: "7 Temporadas",
     imagen: "/malcom.jpg",
-    trailer: "https://youtu.be/R1-YbJYMoW8?si=BtKSQ_StMuYB5UjL"
+    trailer: "https://www.youtube.com/embed/R1-YbJYMoW8"
   },
   { 
     id: 18, 
@@ -213,7 +213,7 @@ export const peliculasData = [
     año: 1989, 
     temporadas: "35+ Temporadas",
     imagen: "/losSimpson.jpg",
-    trailer: "https://youtu.be/_h93U8jqq4E?si=kK46ax3skzQOPquK"
+    trailer: "https://www.youtube.com/embed/_h93U8jqq4E"
   },
   { 
     id: 19, 
@@ -225,7 +225,7 @@ export const peliculasData = [
     año: 2009, 
     duracion: "100 min",
     imagen: "/quepasoayer.jpg",
-    trailer: "https://youtu.be/Rh6BjFD7M-4?si=JYrGcWgOMvolD5he"
+    trailer: "https://www.youtube.com/embed/Rh6BjFD7M-4"
   },
   { 
     id: 20, 
@@ -237,7 +237,7 @@ export const peliculasData = [
     año: 2004, 
     duracion: "109 min",
     imagen: "/dondeEstanlasrubias.jpg",
-    trailer: "https://youtu.be/UxER50XHW-I?si=wyTGp7wqrwDhFPp_"
+    trailer: "https://www.youtube.com/embed/UxER50XHW-I"
   },
   { 
     id: 21, 
@@ -249,7 +249,7 @@ export const peliculasData = [
     año: 2016, 
     duracion: "114 min",
     imagen: "/nomanchesfrida.jpg",
-    trailer: "https://youtu.be/dNQxljO2kzE?si=dVOuuHB7CQIik05c"
+    trailer: "https://www.youtube.com/embed/dNQxljO2kzE"
   },
   { 
     id: 22, 
@@ -261,7 +261,7 @@ export const peliculasData = [
     año: 2019, 
     duracion: "101 min",
     imagen: "/nomanchesfrida2.jpg",
-    trailer: "https://youtu.be/IaqYK6kVI5I?si=sPBhFL6W5pMmQBmC"
+    trailer: "https://www.youtube.com/embed/IaqYK6kVI5I"
   },
   { 
     id: 23, 
@@ -273,7 +273,7 @@ export const peliculasData = [
     año: 2001, 
     duracion: "90 min",
     imagen: "/perfumedevioletas.jpg",
-    trailer: "https://youtu.be/Ov0utOEQcPk?si=BFjqOUO6-ELqHFus"
+    trailer: "https://www.youtube.com/embed/Ov0utOEQcPk"
   },
   { 
     id: 24, 
@@ -285,6 +285,6 @@ export const peliculasData = [
     año: 2012, 
     duracion: "95 min",
     imagen: "/suavepatria.jpg",
-    trailer: "https://youtu.be/6lLKrlGaN4w?si=_v7JkFaegMTRsO8X"
+    trailer: "https://www.youtube.com/embed/6lLKrlGaN4w"
   }
 ];

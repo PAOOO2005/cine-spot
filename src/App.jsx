@@ -9,14 +9,15 @@ function App() {
   const [filtroGenero, setFiltroGenero] = useState('Todos');
   const [soloFavoritos, setSoloFavoritos] = useState(false);
   const [peliculaSeleccionada, setPeliculaSeleccionada] = useState(null);
+  const [trailerActivo, setTrailerActivo] = useState(null);
 
   const [favoritos, setFavoritos] = useState(() => {
-    const guardados = localStorage.getItem('cine_favoritos');
+    const guardados = localStorage.getItem('cinelux_favoritos');
     return guardados ? JSON.parse(guardados) : [];
   });
 
   useEffect(() => {
-    localStorage.setItem('cine_favoritos', JSON.stringify(favoritos));
+    localStorage.setItem('cinelux_favoritos', JSON.stringify(favoritos));
   }, [favoritos]);
 
   const toggleFavorito = (id, e) => {
@@ -40,36 +41,39 @@ function App() {
 
   return (
     <div className="cine-container">
+      {/* Botón de Mis Favoritos en la orilla derecha arriba */}
+      <div className="top-fav-container">
+        <button 
+          className={`fav-corner-btn ${soloFavoritos ? 'active' : ''}`}
+          onClick={() => setSoloFavoritos(!soloFavoritos)}
+        >
+          Mis Favoritos {favoritos.length}
+        </button>
+      </div>
+
+      {/* Cabecera: Título y Buscador */}
       <header className="cine-header">
-        <h1>CineSpot 🌸</h1>
-        <div className="header-controls">
+        <h1 className="logo-title">CineLux</h1>
+        <div className="search-container-large">
           <input 
             type="text" 
-            placeholder="Buscar películas o series..." 
+            placeholder="Buscar películas, series y más..." 
             value={busqueda}
             onChange={(e) => setBusqueda(e.target.value)}
-            className="search-input"
+            className="search-input-transparent"
           />
-          <button 
-            className={`fav-tab-btn ${soloFavoritos ? 'active' : ''}`}
-            onClick={() => setSoloFavoritos(!soloFavoritos)}
-          >
-            ⭐ Mis Favoritos ({favoritos.length})
-          </button>
         </div>
       </header>
 
-      {/* Filtros por Tipo */}
-      <div className="filters-row">
-        <span className="filter-label">Tipo:</span>
-        <button onClick={() => setFiltroTipo('Todas')} className={filtroTipo === 'Todas' ? 'active' : ''}>Todas</button>
-        <button onClick={() => setFiltroTipo('Película')} className={filtroTipo === 'Película' ? 'active' : ''}>Películas</button>
-        <button onClick={() => setFiltroTipo('Serie')} className={filtroTipo === 'Serie' ? 'active' : ''}>Series</button>
+      {/* Tres botones principales (Todas, Películas, Series) grandes y centrados */}
+      <div className="main-filters-centered">
+        <button onClick={() => setFiltroTipo('Todas')} className={`main-filter-btn ${filtroTipo === 'Todas' ? 'active' : ''}`}>Todas</button>
+        <button onClick={() => setFiltroTipo('Película')} className={`main-filter-btn ${filtroTipo === 'Película' ? 'active' : ''}`}>Películas</button>
+        <button onClick={() => setFiltroTipo('Serie')} className={`main-filter-btn ${filtroTipo === 'Serie' ? 'active' : ''}`}>Series</button>
       </div>
 
-      {/* Filtros por Género */}
+      {/* Botones de Género abajo */}
       <div className="filters-row genres-row">
-        <span className="filter-label">Género:</span>
         {generosUnicos.map(gen => (
           <button 
             key={gen} 
@@ -90,6 +94,7 @@ function App() {
               <div key={p.id} className="card" onClick={() => setPeliculaSeleccionada(p)}>
                 <div className="card-img-container">
                   <img src={p.imagen} alt={p.titulo} className="card-img" />
+                  <div className="img-fade-overlay"></div>
                   <button 
                     className={`fav-btn ${esFav ? 'is-fav' : ''}`}
                     onClick={(e) => toggleFavorito(p.id, e)}
@@ -111,7 +116,7 @@ function App() {
         )}
       </div>
 
-      {/* Vista Detallada (Modal con sinopsis completa y botón de trailer) */}
+      {/* Vista Detallada (Modal de Información) */}
       {peliculaSeleccionada && (
         <div className="modal-overlay" onClick={() => setPeliculaSeleccionada(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -128,7 +133,7 @@ function App() {
                 {peliculaSeleccionada.duracion && <p><strong>Duración:</strong> {peliculaSeleccionada.duracion}</p>}
                 {peliculaSeleccionada.temporadas && <p><strong>Temporadas:</strong> {peliculaSeleccionada.temporadas}</p>}
                 
-                <h3>Resumen:</h3>
+                <h3>Resumen / Sinopsis:</h3>
                 <p className="modal-sinopsis-text">{peliculaSeleccionada.sinopsisDetallada}</p>
                 
                 <div className="modal-actions">
@@ -140,17 +145,34 @@ function App() {
                   </button>
 
                   {peliculaSeleccionada.trailer && (
-                    <a 
-                      href={peliculaSeleccionada.trailer} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <button 
                       className="trailer-btn"
+                      onClick={() => setTrailerActivo(peliculaSeleccionada)}
                     >
                       ▶ Ver Trailer
-                    </a>
+                    </button>
                   )}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal para Reproducir el Trailer Internamente */}
+      {trailerActivo && (
+        <div className="modal-overlay trailer-overlay" onClick={() => setTrailerActivo(null)}>
+          <div className="trailer-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-modal" onClick={() => setTrailerActivo(null)}>✕</button>
+            <h3>Trailer: {trailerActivo.titulo}</h3>
+            <div className="video-container">
+              <iframe 
+                src={`${trailerActivo.trailer}?autoplay=1`} 
+                title={`Trailer de ${trailerActivo.titulo}`}
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
